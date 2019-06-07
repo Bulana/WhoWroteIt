@@ -1,7 +1,7 @@
 package com.bulana.whowroteit;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void searchBooks(View view) {
         String queryString = mBookInput.getText().toString();
+        new FetchBook(mTitleText, mAuthorText).execute(queryString);
     }
 }
