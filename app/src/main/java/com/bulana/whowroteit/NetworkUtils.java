@@ -60,7 +60,6 @@ public class NetworkUtils {
                     e.printStackTrace();
                 }
             }
-
         }
         Log.d(LOG_TAG, bookJSONString);
         return bookJSONString;
